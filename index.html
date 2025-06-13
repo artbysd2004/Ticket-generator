@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Generate Your Ticket</h1>
+        <form id="ticketForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="event">Event:</label>
+            <input type="text" id="event" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="seat">Seat Number:</label>
+            <input type="text" id="seat" required>
+
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" accept="image/*">
+
+            <button type="submit">Generate Ticket</button>
+        </form>
+
+        <div id="ticket" class="ticket">
+            <h2>Your Ticket</h2>
+            <p><strong>Name:</strong> <span id="ticketName"></span></p>
+            <p><strong>Event:</strong> <span id="ticketEvent"></span></p>
+            <p><strong>Date:</strong> <span id="ticketDate"></span></p>
+            <p><strong>Seat:</strong> <span id="ticketSeat"></span></p>
+            <img id="ticketImage" src="" alt="Uploaded Image" style="display: none; width: 100px;">
+            <div id="qrcode"></div>
+            <button id="downloadBtn">Download Ticket</button>
+            <button id="printBtn">Print Ticket</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

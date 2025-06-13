@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffb00;
+    text-align: center;
+}
+
+.container {
+    margin: 50px auto;
+    max-width: 400px;
+    background: rgb(243, 243, 226);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button {
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.ticket {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background: #dff0d8;
+    border: 2px solid #5cb85c;
+    text-align: center;
+}
+
+#qrcode {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.ticket img {
+    width: 150px;
+    display: block;
+    margin: 0 auto 15px; /* Added margin below the image */
+    border-radius: 10px;
+}
+
+#downloadBtn, #printBtn {
+    margin-top: 15px; /* Adds space above the buttons */
+    padding: 10px;
+    font-size: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
